@@ -254,8 +254,6 @@ def mandelbrot(h,w,maxit=20,r=2):
 mpl.interactive(True)
 plt.imshow(mandelbrot(400,400))
 
-input("press to continue")
-
 a = np.arange(12).reshape(3,4)
 b1 = np.array([False,True,True])
 b2 = np.array([True,False,True,False])
@@ -305,5 +303,9 @@ plt.figure()
 plt.hist(v,bins=50,density = True) # mpl version
 (n,bins) = np.histogram(v,bins=50,density = True) # numpy version
 plt.plot(0.5*(bins[1:]+bins[:-1]),n)
+
+asdf = lambda t: (t <= 5)*t
+print(asdf(3))
+print(asdf(7))
 
 input("press to continue")
