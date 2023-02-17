@@ -61,6 +61,11 @@ class WidgetGallery():
 
     def editRow(self):
         childRow = self.stepHistoryTable.get_children()[-1]
+        print(childRow)
+        childValues = self.stepHistoryTable.item(childRow)['values']
+        print(childValues)
+        childValues[2] = 'f'
+        print(childValues)
         self.stepHistoryTable.item(childRow,values=("e",'e','e','e'))
         return
 
