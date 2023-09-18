@@ -1,11 +1,23 @@
-import numpy as np
-import scipy as sp
+#import numpy as np
+#import scipy as sp
 import math as math
-import statsmodels as sm
-import sklearn as skl
-import matplotlib as mpl
-import matplotlib.pyplot as plt
+#import statsmodels as sm
+#import sklearn as skl
+#import matplotlib as mpl
+#import matplotlib.pyplot as plt
 
+a = [1, 2, 3]
+b = [3, 2, 1]
+print(a + b + [b[-1]])
+print(a + list(reversed(a)))
+positions = [-300, -285, -270, -255, -240, -225, -210, -195, -180, -165, -150, -135, -120, -105, -90, -75, -60, -45, -30, -15, 0, 15, 30, 45, 60, 75, 90, 105, 120, 135, 150, 165, 180, 195, 210, 225, 240, 255, 270, 285, 300]
+positions = positions + list(reversed(positions))
+print(positions)
+
+c = input("hi:")
+print(c)
+
+'''
 a = np.arange(15).reshape(3,5);
 print(a)
 
@@ -309,3 +321,4 @@ print(asdf(3))
 print(asdf(7))
 
 input("press to continue")
+'''
