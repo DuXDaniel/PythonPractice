@@ -136,5 +136,4 @@ model = create_model()
 model.fit(train_images, train_labels, epochs=5)
 
 # Save the entire model as a SavedModel.
-!mkdir -p saved_model
 model.save('saved_model/my_model')
